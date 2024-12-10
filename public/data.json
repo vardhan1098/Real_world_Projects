@@ -1,0 +1,186 @@
+{
+  "categories": [
+    {
+      "category": "Electronics",
+      "items": [
+        {
+          "id": 1,
+          "name": "Smartphone",
+          "price": 699.99,
+          "image": "https://example.com/images/smartphone.jpg",
+          "description": "Latest model with advanced features."
+        },
+        {
+          "id": 2,
+          "name": "Laptop",
+          "price": 1299.99,
+          "image": "https://example.com/images/laptop.jpg",
+          "description": "Powerful laptop for work and play."
+        },
+        {
+          "id": 3,
+          "name": "Wireless Headphones",
+          "price": 199.99,
+          "image": "https://example.com/images/headphones.jpg",
+          "description": "Noise-cancelling over-ear headphones."
+        }
+      ]
+    },
+    {
+      "category": "Books",
+      "items": [
+        {
+          "id": 4,
+          "name": "Fiction Novel",
+          "price": 15.99,
+          "image": "https://example.com/images/fiction.jpg",
+          "description": "A gripping tale of adventure and mystery."
+        },
+        {
+          "id": 5,
+          "name": "Science Textbook",
+          "price": 49.99,
+          "image": "https://example.com/images/science.jpg",
+          "description": "Comprehensive guide to scientific principles."
+        },
+        {
+          "id": 6,
+          "name": "Cooking Recipe Book",
+          "price": 25.99,
+          "image": "https://example.com/images/cooking.jpg",
+          "description": "Delicious recipes from around the world."
+        }
+      ]
+    },
+    {
+      "category": "Clothing",
+      "items": [
+        {
+          "id": 7,
+          "name": "T-Shirt",
+          "price": 19.99,
+          "image": "https://example.com/images/tshirt.jpg",
+          "description": "Comfortable and stylish cotton t-shirt."
+        },
+        {
+          "id": 8,
+          "name": "Jeans",
+          "price": 49.99,
+          "image": "https://example.com/images/jeans.jpg",
+          "description": "Durable and trendy denim jeans."
+        },
+        {
+          "id": 9,
+          "name": "Jacket",
+          "price": 89.99,
+          "image": "https://example.com/images/jacket.jpg",
+          "description": "Warm and fashionable winter jacket."
+        }
+      ]
+    },
+    {
+      "category": "Home Appliances",
+      "items": [
+        {
+          "id": 10,
+          "name": "Vacuum Cleaner",
+          "price": 129.99,
+          "image": "https://example.com/images/vacuum.jpg",
+          "description": "Efficient and lightweight vacuum cleaner."
+        },
+        {
+          "id": 11,
+          "name": "Microwave Oven",
+          "price": 99.99,
+          "image": "https://example.com/images/microwave.jpg",
+          "description": "Compact microwave oven for quick meals."
+        },
+        {
+          "id": 12,
+          "name": "Air Conditioner",
+          "price": 299.99,
+          "image": "https://example.com/images/ac.jpg",
+          "description": "Energy-efficient air conditioner."
+        }
+      ]
+    },
+    {
+      "category": "Toys",
+      "items": [
+        {
+          "id": 13,
+          "name": "Action Figure",
+          "price": 14.99,
+          "image": "https://example.com/images/action-figure.jpg",
+          "description": "Collectible superhero action figure."
+        },
+        {
+          "id": 14,
+          "name": "Puzzle",
+          "price": 9.99,
+          "image": "https://example.com/images/puzzle.jpg",
+          "description": "Challenging 500-piece jigsaw puzzle."
+        },
+        {
+          "id": 15,
+          "name": "Remote Control Car",
+          "price": 29.99,
+          "image": "https://example.com/images/rc-car.jpg",
+          "description": "Fast and fun remote control car."
+        }
+      ]
+    },
+    {
+      "category": "Sports Equipment",
+      "items": [
+        {
+          "id": 16,
+          "name": "Football",
+          "price": 19.99,
+          "image": "https://example.com/images/football.jpg",
+          "description": "Durable and high-quality football."
+        },
+        {
+          "id": 17,
+          "name": "Tennis Racket",
+          "price": 49.99,
+          "image": "https://example.com/images/tennis-racket.jpg",
+          "description": "Lightweight and powerful tennis racket."
+        },
+        {
+          "id": 18,
+          "name": "Yoga Mat",
+          "price": 25.99,
+          "image": "https://example.com/images/yoga-mat.jpg",
+          "description": "Non-slip yoga mat for all fitness levels."
+        }
+      ]
+    },
+    {
+      "category": "Groceries",
+      "items": [
+        {
+          "id": 19,
+          "name": "Pasta",
+          "price": 2.99,
+          "image": "https://example.com/images/pasta.jpg",
+          "description": "Organic whole wheat pasta."
+        },
+        {
+          "id": 20,
+          "name": "Coffee Beans",
+          "price": 12.99,
+          "image": "https://example.com/images/coffee.jpg",
+          "description": "Premium roasted coffee beans."
+        },
+        {
+          "id": 21,
+          "name": "Olive Oil",
+          "price": 10.99,
+          "image": "https://example.com/images/olive-oil.jpg",
+          "description": "Extra virgin olive oil for cooking."
+        }
+      ]
+    }
+  ]
+}
