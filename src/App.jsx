@@ -1,10 +1,20 @@
-import React from 'react';
+import React from "react";
+import { Route, Routes } from "react-router";
+import Dash from "./shoppingCart/Dash";
+import Details from "./shoppingCart/Details";
+import NavBar from "./Navbar/Nav_Overlay";
+import Cart from "./shoppingCart/Cart";
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Dash />} />
+        <Route path="/details/:id" element={<Details />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+    </>
   );
 };
 

@@ -1,0 +1,15 @@
+.container{
+    height: 30px;
+    width: 300px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.progress{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: translatex(-50%);
+    background-color: rebeccapurple;
+}

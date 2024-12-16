@@ -1,0 +1,19 @@
+.search-field{
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px solid black;
+}
+.search-field input{
+    border: none;
+}
+.search-field input:focus{
+    outline: none;
+}
+.sideOverlay{
+    margin-left: 250px;
+}
