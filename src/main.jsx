@@ -1,10 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import Count from "./Count";
+import Accord from "./According/Accord";
 
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Count/>
+   <Accord/>
   </StrictMode>
 );
+{/* <Provider store={store}>
+<Product />
+</Provider> */}
