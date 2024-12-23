@@ -1,13 +1,14 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import Accord from "./According/Accord";
+import { Provider } from "react-redux";
 
+import Redux from "./Pratice";
+import store from "./Pratice/Redux/Store/Store";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-   <Accord/>
+   <Provider store={store}>
+    <Redux/>
+   </Provider>
   </StrictMode>
 );
-{/* <Provider store={store}>
-<Product />
-</Provider> */}

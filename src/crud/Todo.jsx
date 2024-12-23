@@ -1,96 +1,64 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Todo = () => {
-  const [todo, setTodo] = useState([]);
+  const [todos, setTodos] = useState([]);
   const [inputValue, setInputValue] = useState("");
-  const [isEditing, setIsEditing] = useState(false);
   const [editId, setEditId] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
-  const totalItems = 5;
-  const totalPages = Math.ceil(todo.length / totalItems);
-
-  const currentTodo = todo.slice(
-    (currentPage - 1) * totalItems,
-    currentPage * totalItems
-  );
+  const [isEditing, setIsEditing] = useState(false);
 
   const handleAddTodo = () => {
     if (inputValue.trim() === "") {
-      alert("Please Add the Todo..");
+      alert("please add a todo");
     } else {
-      let newTodo = {
+      const newTodo = {
+        id: new Date().getTime().toString(),
         title: inputValue,
-        id: new Date().getTime(),
       };
-      setTodo((prevTodo) => [...prevTodo, newTodo]);
+      setTodos([...todos, newTodo]);
       setInputValue("");
     }
   };
 
-  const handleEdit = (id) => {
-    const exisitngTodo = todo.find((item) => item.id === id);
-    setInputValue(exisitngTodo.title);
+  const handleEditTodo = (id) => {
+    const updateTodos = todos.find((item) => item.id === id);
     setEditId(id);
+    setInputValue(updateTodos.title);
     setIsEditing(true);
   };
 
   const handleUpdateTodo = () => {
-    setTodo((prevTodo) =>
-      prevTodo.map((item) =>
-        item.id === editId ? { ...item, title: inputValue } : item
+    setTodos((prevTodo) =>
+      prevTodo.map((todo) =>
+        todo.id === editId ? { ...todo, title: inputValue } : todo
       )
     );
+    setEditId(null);
     setInputValue("");
     setIsEditing(false);
-    setEditId(null);
   };
 
   return (
     <div>
-      <h1>Hello Todo</h1>
+      <input
+        type="text"
+        placeholder="Enter a Todo.."
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+      />
+      {isEditing ? (
+        <button onClick={handleUpdateTodo}>UpdateTodo</button>
+      ) : (
+        <button onClick={handleAddTodo}>AddTodo</button>
+      )}
       <div>
-        <input
-          type="text"
-          placeholder="Enter A todo"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-        />
-        {isEditing ? (
-          <button onClick={handleUpdateTodo}>UpdateTodo</button>
-        ) : (
-          <button onClick={handleAddTodo}>Add Todo</button>
-        )}
-      </div>
-      <div>
-        {currentTodo.map((item) => (
-          <div
-            key={item.id}
-            style={{ margin: "10px", justifyContent: "space-around" }}
-          >
-            <h3>{item.title}</h3>
-            <button
-              style={{
-                padding: "4px 10px",
-                backgroundColor: "black",
-                border: "none",
-              }}
-            >
-              ❌
-            </button>
-            <button onClick={() => handleEdit(item.id)}>🖊️</button>
+        {todos.map((todo) => (
+          <div key={todo.id}>
+            <h1>{todo.title}</h1>
+            <button onClick={() => handleEditTodo(todo.id)}>🖊️</button>
+            <button>Delete</button>
           </div>
         ))}
       </div>
-
-        {Array.from({ length: totalPages }, (_, index) => index + 1).map(
-          (pagenum) => (
-            <button key={pagenum} onClick={() => setCurrentPage(pagenum)}>
-              {pagenum}
-            </button>
-          )
-        )}
-      
     </div>
   );
 };
