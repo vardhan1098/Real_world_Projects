@@ -1,0 +1,29 @@
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+  }
+  
+  button {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: var(--border-radius-medium);
+    border: none;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--color-secondary);
+  }
+  
+  .error {
+    color: var(--color-error);
+  }
+  
+  .success {
+    color: var(--color-success);
+  }
+  

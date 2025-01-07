@@ -1,0 +1,40 @@
+/* Colors */
+:root {
+    --color-primary: #4caf50;        /* Main theme color (green) */
+    --color-secondary: #ff9800;     /* Accent color (orange) */
+    --color-background: #f9f9f9;    /* Background color (light gray) */
+    --color-text: #333333;          /* Primary text color (dark gray) */
+    --color-text-light: #ffffff;    /* Light text (white) */
+    --color-border: #dddddd;        /* Border color */
+    --color-error: #f44336;         /* Error (red) */
+    --color-success: #4caf50;       /* Success (green) */
+    --color-info: #2196f3;          /* Info (blue) */
+  }
+  
+  /* Font */
+  :root {
+    --font-primary: "Arial", sans-serif;   /* Primary font */
+    --font-size-base: 16px;                /* Base font size */
+    --font-size-small: 14px;               /* Small font size */
+    --font-size-large: 18px;               /* Large font size */
+  }
+  
+  /* Spacing */
+  :root {
+    --spacing-small: 0.5rem;  /* Small spacing */
+    --spacing-medium: 1rem;   /* Medium spacing */
+    --spacing-large: 2rem;    /* Large spacing */
+  }
+  
+  /* Border Radius */
+  :root {
+    --border-radius-small: 4px;   /* Small radius */
+    --border-radius-medium: 8px;  /* Medium radius */
+    --border-radius-large: 16px;  /* Large radius */
+  }
+  
+  /* Box Shadow */
+  :root {
+    --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Default shadow */
+  }
+  
